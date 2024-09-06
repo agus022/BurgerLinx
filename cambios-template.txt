@@ -1,0 +1,5 @@
+Cambiar el fondo del carousel para que sea adecuado al tema 
+Imagenes con mas calidad 
+Tipo de letra y color 
+Idioma correcto 
+Terminar el footer 
