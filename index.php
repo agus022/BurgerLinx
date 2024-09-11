@@ -44,7 +44,7 @@
       <header class="header_section">
         <div class="container-fluid bg-nav">
           <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
               BurgerLinx
             </a>
             </a>
@@ -55,19 +55,19 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.php">Inicio<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="menu.html">Hamburgesas</a>
+                  <a class="nav-link" href="menu.php">Hamburgesas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="promociones.html">Promociones</a>
+                  <a class="nav-link" href="promociones.php">Promociones</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">Historia</a>
+                  <a class="nav-link" href="about.php">Historia</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contacto</a>
+                  <a class="nav-link" href="contact.php">Contacto</a>
                 </li>
               </ul>
               <div class="quote_btn-container">

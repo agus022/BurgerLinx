@@ -44,7 +44,7 @@
       <header class="header_section">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
               BurgerLinx
             </a>
             </a>
@@ -55,19 +55,19 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="about.html"> Hamburguesas</a>
+                  <a class="nav-link" href="about.php"> Hamburguesas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="chocolate.html">Promociones</a>
+                  <a class="nav-link" href="chocolate.php">Promociones</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="testimonial.html">Historia</a>
+                  <a class="nav-link" href="testimonial.php">Historia</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contacto</a>
+                  <a class="nav-link" href="contact.php">Contacto</a>
                 </li>
               </ul>
               <div class="quote_btn-container">
@@ -156,19 +156,19 @@
                 Menu
               </h4>
               <div class="info_links_menu">
-                <a href="index.html">
+                <a href="index.php">
                   Home
                 </a>
-                <a href="about.html">
+                <a href="about.php">
                   About
                 </a>
-                <a href="chocolate.html">
+                <a href="chocolate.php">
                   Chocolates
                 </a>
-                <a href="testimonial.html">
+                <a href="testimonial.php">
                   Testimonial
                 </a>
-                <a href="contact.html">
+                <a href="contact.php">
                   Contact us
                 </a>
               </div>
