@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <?php
-$hamburguesas = array(
-  array("id" => 1, "nombre" => "Hamburguesa de queso", "descripcion" => "Hamburguesa simple con carne a la parilla y queso americano.", "precio" => "$60.00", "url" => "", "imagen" => "./images/hamburguesas_01.jpg"),
-  array("id" => 2, "nombre" => "Hamburguesa de pollo", "descripcion" => "Hamburguesa simple con carne de pechuga de pollo.", "precio" => "$88.00", "url" => "", "imagen" => "./images/hamburguesas_02.jpg"),
-  array("id" => 3, "nombre" => "Hamburguesa de chilli", "descripcion" => "Hamburguesa con carne de pechuga de pollo y nuestra receta especial de chili.", "precio" => "$90.00", "url" => "", "imagen" => "./images/hamburguesas_03.jpg")
-
-);
+$hamburguesas = array();
+$mbd = new PDO('mysql:host=localhost;dbname=burger', "burger", "123");
+  $gsent = $mbd->prepare("SELECT id,nombre,descripcion,precio,imagen FROM hamburguesa");
+  $gsent->execute();
+  $hamburguesas = $gsent->fetchAll(PDO::FETCH_ASSOC);
 // echo "<pre>";
 // print_r($hamburguesas);
 // die();
@@ -169,93 +168,17 @@ $hamburguesas = array(
                     class="card-img-top"
                     alt="Hamburguesa de queso" />
                   <div class="card-body">
-                    <h5 class="card-title"><?php echo $hamburguesa['nombre']; ?></h5>
+                    <h5 class="card-title"><a href="<?php echo $hamburguesa['id']; ?>" style="text-decoration: none;"><?php echo $hamburguesa['nombre']; ?></a></h5>
                     <p class="card-text">
                       <?php echo $hamburguesa['descripcion']; ?>
                     </p>
-                    <span><?php echo $hamburguesa['precio']; ?></span>
+                    <span>$<?php echo $hamburguesa['precio']; ?></span>
                   </div>
                 </div>
               </div>
             <?php
             endforeach;
             ?>
-            <div class="col-md-3">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="./images/hamburguesas_04.jpg"
-                  class="card-img-top"
-                  alt="Hamburguesa doble" />
-                <div class="card-body">
-                  <h5 class="card-title">Hamburguesa 3/4 L.</h5>
-                  <p class="card-text">
-                    Hamburguesa con carne de res a la parrilla de 3/4 de libra
-                    con pan integral.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="./images/hamburguesas_05.jpg"
-                  class="card-img-top"
-                  alt="Hamburguesa doble" />
-                <div class="card-body">
-                  <h5 class="card-title">Hamburguesa queso doble</h5>
-                  <p class="card-text">
-                    Hamburguesa con carne de res a la parrilla y doble queso.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="./images/hamburguesas_06.jpg"
-                  class="card-img-top"
-                  alt="Hamburguesa doble" />
-                <div class="card-body">
-                  <h5 class="card-title">Hamburguesa a doble sentido</h5>
-                  <p class="card-text">
-                    Hamburguesa con doble carne de res y doble queso.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="./images/hamburguesas_07.jpg"
-                  class="card-img-top"
-                  alt="Hot-Dog simple" />
-                <div class="card-body">
-                  <h5 class="card-title">Hot-Dog simplre</h5>
-                  <p class="card-text">
-                    Hot Dog con salchica de carne de res simple.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="./images/hamburguesas_08.jpg"
-                  class="card-img-top"
-                  alt="HotDog " />
-                <div class="card-body">
-                  <h5 class="card-title">Hot-Dog simplre</h5>
-                  <p class="card-text">
-                    Hot Dog con salchica de carne de res simple.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
